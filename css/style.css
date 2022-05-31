@@ -29,6 +29,7 @@ header #navbar ul li {
   list-style: none;
   display: flex;
   height: 100%;
+  border-right: 1px solid black;
 }
 header #navbar ul li a {
   text-decoration: none;
