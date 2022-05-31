@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">  
+	<title>VP-Portfolio</title>
+</head>
+	<body>
+		<header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home"> <p class="en">Home</p><p class="ua">Головна</p> </a></li>
+            <li><a href="#about"><p class="en">About</p><p class="ua">Про мене</p></a></li>
+            <li><a href="#projects"><p class="en">Project</p><p class="ua">Роботи</p></a></li>
+            <li><a href="#contact"><p class="en">Contact</p><p class="ua">Контакти</p></a></li>
+        </ul>
+        <div id="language" >
+            <a href="#more">
+                <i class="fas fa-globe-americas"></i><span class="ua">EN</span><span class ="en">UA</span>
+            </a>
+        </div>
+    </nav>
+    </header>
+
+		<section id="home">
+    <div class="home-title">
+        <h1 class="en">Hey I am Vitaliy</h1>
+        <h1 class="ua">Привіт я Віталій</h1>
+        <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+        <ul>
+            <li> <a class="btn btn-default hvr-bounce-to-right" href="https://www.facebook.com/pukas.vitaliy" 
+                role="button" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a class="btn btn-default hvr-bounce-to-right" href="https://github.com/VitaliyPukas?tab=repositories" target="_blank" role="button">
+                <i class="fa fa-github"></i> Github</a></li>
+            <li> <a class="btn btn-default hvr-bounce-to-right" href="https://www.linkedin.com/in/vitaliy-p-005425237/" target="_blank" role="button">
+                <i class="fa fa-linkedin"></i> LinkedIn</a></li>
+            <li><a class="btn btn-default hvr-bounce-to-right" href="https://www.freecodecamp.org/ukrainian/fcc265d1a53-f192-40ef-b119-e0586e5c2f8b" target="_blank" role="button">
+                <i class="fa fa-fire"></i> FreeCodeCamp</a></li>
+        </ul>
+    </div>
+        </section>
+
+        <section id="about">  
+            <h2 class="en">My skils</h2>
+            <h2 class="ua">Мої скіли</h2>   
+            
+            <div class="skill-bars">
+                <div class="bar">
+                  <div class="info">
+                    <span>HTML</span>
+                  </div>
+                  <div class="progress-line html">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>CSS</span>
+                  </div>
+                  <div class="progress-line css">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>jQuery</span>
+                  </div>
+                  <div class="progress-line jquery">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>Python</span>
+                  </div>
+                  <div class="progress-line python">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <span>MySQL</span>
+                  </div>
+                  <div class="progress-line mysql">
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="project-tile ua">Це деякі мої проекти</h2>
+            <h2 class="project-tile en">These are some of my projects</h2>       
+                
+            <nav class="nav">
+                <ul>
+                    <li data-f="all" class="text-all">ALL</li>
+                    <li data-f="alizarin" class="text-alizarin">ALIZARIN</li>
+                    <li data-f="wisteria" class="text-wisteria">WISTERIA</li>
+                    <li data-f="emerland" class="text-emerland">EMERLAND</li>
+                    <li data-f="sunflower" class="text-sunflower">SUNFLOWER</li>
+                </ul>
+            </nav>
+            <div class="block-cover">
+                <div class="col-auto box alizarin"></div>
+                <div class="col-auto box wisteria"></div>
+                <div class="col-auto box emerland"></div>
+                <div class="col-auto box belizehole"></div>
+                <div class="col-auto box sunflower"></div>
+                <div class="col-auto box alizarin"></div>
+                <div class="col-auto box wisteria"></div>               
+            </div>
+            
+            
+
+
+        </section>
+
+        <section id="contact">
+            <div class="contact-header">
+                <h2 class="ua">Давай працювати разом...</h2>
+                <h2 class="en">Let's work together...</h2>   
+            </div>
+
+            <div class="form">
+                <form action="#" id="form" class="form-body">
+
+
+                    <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Site Name">
+                <input type="hidden" name="admin_email" value="pukasvitaliy@gmail.com">
+                <input type="hidden" name="form_subject" value="Form Subject">
+                <!-- END Hidden Required Fields -->
+
+                    <div class="form-border">
+                        <div class="form-item">
+                            <label for="formName" class="form-label"><p class="en">Name*</p><p class="ua">Імя*</p></label>
+                            <input name="Name" id="formName" type="text" class="form-input _req " >
+                        </div>
+                        <div class="form-item">
+                            <label for="formEmail" class="form-label"><p class="en">Email*</p><p class="ua">Пошта*</p></label>
+                            <input name="Email" id="formEmail" type="text" class="form-input _req _email" >
+                        </div>
+                        <div class="form-item">
+                            <label for="formMassage" class="form-label"><p class="en">Massage</p><p class="ua">Повідомлення</p></label>
+                            <textarea name="Massage" id="formMassage" class="form-input"></textarea>
+                        </div>
+                        <button class="form-btn" type="submit"><p class="en">Send</p><p class="ua">Відправити</p></button>
+                    </div>     
+                </form>
+            </div>
+        </section>
+	
+		<footer>
+    <ul>
+        <li> <a class="btn btn-default hvr-bounce-to-right" href="https://www.facebook.com/pukas.vitaliy" 
+            role="button" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+        <li><a class="btn btn-default hvr-bounce-to-right" href="https://github.com/VitaliyPukas?tab=repositories" target="_blank" role="button">
+            <i class="fa fa-github"></i> Github</a></li>
+        <li> <a class="btn btn-default hvr-bounce-to-right" href="https://www.linkedin.com/in/vitaliy-p-005425237/" target="_blank" role="button">
+            <i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        <li><a class="btn btn-default hvr-bounce-to-right" href="https://www.freecodecamp.org/ukrainian/fcc265d1a53-f192-40ef-b119-e0586e5c2f8b" target="_blank" role="button">
+            <i class="fa fa-fire"></i> FreeCodeCamp</a></li>
+    </ul>
+        </footer>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="js/app.js"></script>
+        <script src="js/filter.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/leng.js"></script>
+		<script src="https://use.fontawesome.com/1c7fddf764.js"></script>
+	</body>
+</html>
