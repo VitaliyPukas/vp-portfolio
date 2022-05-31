@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 .en{
     display: none;
 }
@@ -103,78 +102,72 @@ header {
     }  
 }
 
-/* end home */
-
-
-
 /* about me */
 
 #about{
-    border-top: 5px solid #be3144;
-  
+    border-top: 5px solid #be3144;  
     h2 {
         font-size: 40px;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 30px;
+    }
+    .skill-bars{
+      padding: 25px 30px;
+      margin: 20px auto 50px;
+      width: 70%;
+      background: #000;
+      box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      .bar {
+        margin: 20px 0;
+        .info{
+          margin-bottom: 5px;
+          span{
+            font-weight: 500;
+            font-size: 17px;
+            color: #fff;
+            opacity: 0;
+            animation: showText 0.5s 1s linear forwards;
+          }
+        }
+        .progress-line{
+          height: 10px;
+          width: 100%;
+          background: #f0f0f0;
+          position: relative;
+          transform: scaleX(0);
+          transform-origin: left;
+          border-radius: 10px;
+          box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),0 1px rgba(255,255,255,0.8);
+          animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+          span{
+            height: 100%;
+            position: absolute;
+            border-radius: 10px;
+            transform: scaleX(0);
+            transform-origin: left;
+            background: #be3144;
+            animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+          }
+        }
+      }
+      .bar:first-child{
+        margin-top: 0px;
+      }
     }
 }
 
-
-.skill-bars{
-    padding: 25px 30px;
-    margin: 20px auto 50px;
-    width: 70%;
-    background: #000;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-    border-radius: 10px;
-  }
-  .skill-bars .bar{
-    margin: 20px 0;
-  }
-  .skill-bars .bar:first-child{
-    margin-top: 0px;
-  }
-  .skill-bars .bar .info{
-    margin-bottom: 5px;
-  }
-  .skill-bars .bar .info span{
-    font-weight: 500;
-    font-size: 17px;
-    color: #fff;
-    opacity: 0;
-    animation: showText 0.5s 1s linear forwards;
-  }
   @keyframes showText {
     100%{
       opacity: 1;
     }
-  }
-  .skill-bars .bar .progress-line{
-    height: 10px;
-    width: 100%;
-    background: #f0f0f0;
-    position: relative;
-    transform: scaleX(0);
-    transform-origin: left;
-    border-radius: 10px;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
-                0 1px rgba(255,255,255,0.8);
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
   }
   @keyframes animate {
     100%{
       transform: scaleX(1);
     }
   }
-  .bar .progress-line span{
-    height: 100%;
-    position: absolute;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    background: #be3144;
-    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-  }
+  
   .bar .progress-line.html span{
     width: 90%;
   }
@@ -261,69 +254,58 @@ header {
         font-size: 35px;
         color: #f0f0f0;
     }
-    a {
-        text-align: center;
-        color: #fff;
-        text-decoration: none;
-        display: block;
-        text-transform: uppercase;
-    }   
+    .nav{
+      ul{
+        li{
+          display: inline-block;
+          padding: 10px 40px 10px 0;
+          cursor: pointer;
+        }
+        .text-all {
+          color: #fff;
+        }
+        .text-alizarin{
+          color : #e74c3c;
+        }
+        .text-wisteria{
+          color : #8e44ad;
+        }
+        .text-emerland{
+          color : #2ecc71;
+        }
+        .text-sunflower{
+          color : #f1c40f;
+        }
+      }
+    }
+    .block-cover{
+      .box {
+        border-radius: 4px;
+        box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+        min-height: 140px;
+        min-width: calc(22% - 28px);
+        padding: 0 10px;
+        margin: 15px;
+        border-width: 3px;
+        float: left;
+      }
+      .alizarin{
+          border: 3px solid #e74c3c;
+        }
+        .wisteria{
+          border: 3px solid #8e44ad;
+        }
+        .emerland{
+          border: 3px solid #2ecc71;
+        }
+        .belizehole{
+          border: 3px solid #2980b9;
+        }
+        .sunflower{
+          border: 3px solid #f1c40f;
+        }
+    }
 }
-
-
-  
-  #projects nav ul li {
-      display: inline-block;
-      padding: 10px 40px 10px 0;
-      cursor: pointer;
-  }
-  
-  #projects .box {
-      border-radius: 4px;
-      box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
-      min-height: 140px;
-      min-width: calc(22% - 28px);
-      padding: 0 10px;
-      margin: 15px;
-      border-width: 3px;
-      float: left;
-  }
-  
-  .box.alizarin{
-    border: 3px solid #e74c3c;
-  }
-  .box.wisteria{
-    border: 3px solid #8e44ad;
-  }
-  .box.emerland{
-    border: 3px solid #2ecc71;
-  }
-  .box.belizehole{
-    border: 3px solid #2980b9;
-  }
-  .box.sunflower{
-    border: 3px solid #f1c40f;
-  }
- 
-  .text-all {
-    color: #fff;
-  }
-  .text-alizarin{
-    color : #e74c3c;
-  }
-  .text-wisteria{
-    color : #8e44ad;
-  }
-  .text-emerland{
-    color : #2ecc71;
-  }
-  .text-belizehole{
-    color : #2980b9;
-  }
-  .text-sunflower{
-    color : #f1c40f;
-  }
-  
   .hide {
     opacity: 1;
     animation-name: a1;
@@ -331,14 +313,14 @@ header {
     animation-fill-mode: forwards;
   }
   
-  @keyframes a1{
+  @keyframes a1 {
     to {
-          opacity: 0;
-          min-height: 0; 
-          min-width: 0;
-          padding: 0;
-          margin: 0;
-          border: 0;
+        opacity: 0;
+        min-height: 0; 
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
     } 
   }
 
@@ -352,7 +334,7 @@ header {
     border-top: 5px solid #be3144;
     background-color: #ffffff;
     padding: 0 0 50px;
-    h2{
+    h2 {
         text-align: center;
         padding: 80px 0;
         font-size: 35px;
@@ -376,12 +358,7 @@ header {
           }
           
       }
-    }
-    
-
-    
-    
-    
+    }    
 }
 
 
@@ -492,8 +469,7 @@ footer {
         padding: 10px 0;
         position: relative;
         top: -10px;
-    }
-    
+    }  
 }
 
 /* end media*/

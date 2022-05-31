@@ -98,7 +98,6 @@ header #navbar #language :hover i {
   padding-right: 7px;
 }
 
-/* end home */
 /* about me */
 #about {
   border-top: 5px solid #be3144;
@@ -106,10 +105,9 @@ header #navbar #language :hover i {
 #about h2 {
   font-size: 40px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
-
-.skill-bars {
+#about .skill-bars {
   padding: 25px 30px;
   margin: 20px auto 50px;
   width: 70%;
@@ -117,33 +115,20 @@ header #navbar #language :hover i {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-
-.skill-bars .bar {
+#about .skill-bars .bar {
   margin: 20px 0;
 }
-
-.skill-bars .bar:first-child {
-  margin-top: 0px;
-}
-
-.skill-bars .bar .info {
+#about .skill-bars .bar .info {
   margin-bottom: 5px;
 }
-
-.skill-bars .bar .info span {
+#about .skill-bars .bar .info span {
   font-weight: 500;
   font-size: 17px;
   color: #fff;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
 }
-
-@keyframes showText {
-  100% {
-    opacity: 1;
-  }
-}
-.skill-bars .bar .progress-line {
+#about .skill-bars .bar .progress-line {
   height: 10px;
   width: 100%;
   background: #f0f0f0;
@@ -154,13 +139,7 @@ header #navbar #language :hover i {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.8);
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
-
-@keyframes animate {
-  100% {
-    transform: scaleX(1);
-  }
-}
-.bar .progress-line span {
+#about .skill-bars .bar .progress-line span {
   height: 100%;
   position: absolute;
   border-radius: 10px;
@@ -169,7 +148,20 @@ header #navbar #language :hover i {
   background: #be3144;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
+#about .skill-bars .bar:first-child {
+  margin-top: 0px;
+}
 
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
 .bar .progress-line.html span {
   width: 90%;
 }
@@ -259,21 +251,27 @@ header #navbar #language :hover i {
   font-size: 35px;
   color: #f0f0f0;
 }
-#projects a {
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  text-transform: uppercase;
-}
-
-#projects nav ul li {
+#projects .nav ul li {
   display: inline-block;
   padding: 10px 40px 10px 0;
   cursor: pointer;
 }
-
-#projects .box {
+#projects .nav ul .text-all {
+  color: #fff;
+}
+#projects .nav ul .text-alizarin {
+  color: #e74c3c;
+}
+#projects .nav ul .text-wisteria {
+  color: #8e44ad;
+}
+#projects .nav ul .text-emerland {
+  color: #2ecc71;
+}
+#projects .nav ul .text-sunflower {
+  color: #f1c40f;
+}
+#projects .block-cover .box {
   border-radius: 4px;
   box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
   min-height: 140px;
@@ -283,49 +281,20 @@ header #navbar #language :hover i {
   border-width: 3px;
   float: left;
 }
-
-.box.alizarin {
+#projects .block-cover .alizarin {
   border: 3px solid #e74c3c;
 }
-
-.box.wisteria {
+#projects .block-cover .wisteria {
   border: 3px solid #8e44ad;
 }
-
-.box.emerland {
+#projects .block-cover .emerland {
   border: 3px solid #2ecc71;
 }
-
-.box.belizehole {
+#projects .block-cover .belizehole {
   border: 3px solid #2980b9;
 }
-
-.box.sunflower {
+#projects .block-cover .sunflower {
   border: 3px solid #f1c40f;
-}
-
-.text-all {
-  color: #fff;
-}
-
-.text-alizarin {
-  color: #e74c3c;
-}
-
-.text-wisteria {
-  color: #8e44ad;
-}
-
-.text-emerland {
-  color: #2ecc71;
-}
-
-.text-belizehole {
-  color: #2980b9;
-}
-
-.text-sunflower {
-  color: #f1c40f;
 }
 
 .hide {
