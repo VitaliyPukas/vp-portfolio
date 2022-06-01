@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Arvo", serif;
 }
 
 .en {
@@ -73,6 +75,7 @@ header #navbar #language :hover i {
 #home .home-title h1 {
   text-align: center;
   font-size: 50px;
+  font-weight: 500;
   color: #fff;
 }
 #home .home-title p {
@@ -442,6 +445,5 @@ footer ul li a {
     top: -10px;
   }
 }
-/* end media*/
 
 /*# sourceMappingURL=style.css.map */
