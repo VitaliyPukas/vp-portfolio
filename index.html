@@ -9,20 +9,33 @@
 	<title>VP-Portfolio</title>
 </head>
 	<body>
-		<header>
-      <nav id="navbar">
-        <ul>
-          <li><a href="#home"> <p class="en">Home</p><p class="ua">Головна</p> </a></li>
-          <li><a href="#about"><p class="en">About</p><p class="ua">Про мене</p></a></li>
-          <li><a href="#projects"><p class="en">Project</p><p class="ua">Роботи</p></a></li>
-          <li><a href="#contact"><p class="en">Contact</p><p class="ua">Контакти</p></a></li>
-        </ul>
+		<header >
+
+      <div class="overlay overlay-slide-left" id="overlay">
+        <nav id="navbar" >
+          <ul class="nav-menu">
+            <li id="nav-1" class="slide-out-1 center"><a href="#home" class="center"> <p class="en">Home</p><p class="ua">Головна</p> </a></li>
+            <li id="nav-2" class="slide-out-2 center"><a href="#about" class="center"><p class="en">About</p><p class="ua">Про мене</p></a></li>
+            <li id="nav-3" class="slide-out-3 center"><a href="#projects" class="center"><p class="en">Project</p><p class="ua">Роботи</p></a></li>
+            <li id="nav-4" class="slide-out-4 center"><a href="#contact" class="center"><p class="en">Contact</p><p class="ua">Контакти</p></a></li>
+          </ul>
+        </nav>
+      </div>
+     
+      
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="menu-bar1"></div>
+          <div class="menu-bar2"></div>
+          <div class="menu-bar3"></div>
+        </div>
+        
+
+        
         <div id="language" >
           <a href="#more">
             <i class="fas fa-globe-americas"></i><span class="ua">EN</span><span class ="en">UA</span>
           </a>
         </div>
-      </nav>
     </header>
 
 		<section id="home">
@@ -131,16 +144,16 @@
 
                     <div class="form-border">
                         <div class="form-item">
-                            <label for="formName" class="form-label"><p class="en">Name*</p><p class="ua">Імя*</p></label>
+                            <label for="formName" class="form-label"><p class="en">Name*</p><p class="ua">Ім'я *</p></label>
                             <input name="Name" id="formName" type="text" class="form-input _req " >
                         </div>
                         <div class="form-item">
-                            <label for="formEmail" class="form-label"><p class="en">Email*</p><p class="ua">Пошта*</p></label>
+                            <label for="formEmail" class="form-label"><p class="en">Email*</p><p class="ua">Пошта *</p></label>
                             <input name="Email" id="formEmail" type="text" class="form-input _req _email" >
                         </div>
                         <div class="form-item">
                             <label for="formMassage" class="form-label"><p class="en">Massage</p><p class="ua">Повідомлення</p></label>
-                            <textarea name="Massage" id="formMassage" class="form-input"></textarea>
+                            <textarea name="Massage" id="formMassage" class="form-input" rows="8"></textarea>
                         </div>
                         <button class="form-btn" type="submit"><p class="en">Send</p><p class="ua">Відправити</p></button>
                     </div>     
@@ -166,6 +179,6 @@
     <script src="js/filter.js"></script>
     <script src="js/form.js"></script>
     <script src="js/leng.js"></script>
-    
+    <script src="js/hamburger.js"></script>
 	</body>
 </html>
