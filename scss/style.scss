@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Chakra Petch', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 .en{
@@ -15,75 +15,63 @@
 /* header */
 
 
-// header {
-//   background-color: #be3144;
-//     margin: 0;
-//     position: fixed;
-//     width: 100%;
-//     z-index: 10;
-//     display: flex;
-//     justify-content:space-between;
-//     #navbar {
-//              display: flex;
-//              margin: 0 30px 0 0;
-//              justify-content: space-between;
-//              align-items: center;
-            
-//              ul {
-//                   display: flex;
-//                   flex-direction: column;
-//                   width: 100%;
-//                   li {
-//                       list-style: none;
-//                       display: flex;
-//                      height: 100%;
-//                      border-right: 1px solid black;
-//                       a {
-//                          text-decoration: none;
-//                         font-size: 24px;
-//                          font-weight: 500;
-//                          color: #fff;
-//                            padding: 10px 15px;
-//                           display: block; 
-//                        }:hover {
-//                            background-color: rgb(0, 0, 0);
-//                        }
-//                    }
-//               }
+header {
+  background-color: #be3144;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content:space-between;
+    #navbar {
+             ul {
+                  display: flex;
+                  
+                  width: 100%;
+                  li {
+                      list-style: none;
+                      display: flex;
+                     height: 100%;
+                     border-right: 1px solid black;
+                      a {
+                         text-decoration: none;
+                        font-size: 24px;
+                         font-weight: 500;
+                         color: #fff;
+                           padding: 10px 15px;
+                          display: block; 
+                       }:hover {
+                           background-color: rgb(0, 0, 0);
+                       }
+                   }
+              }
               
-//             }
-//             #language{
-//               position: static;
-//               font-size: 22px;
-//               margin-right: 20px;
-//               display: flex;
-//               align-items: center;
-//               a {
-//                 color: white;
-//                 text-decoration: none;
-//                 i {
-//                   margin-right: 10px;
-//                   color: #000;
-//                 }
-//               }
-//               }  
-//             }    
+            }
+            #language{
+              position: static;
+              font-size: 22px;
+              margin-right: 20px;
+              display: flex;
+              align-items: center;
+              a {
+                color: white;
+                text-decoration: none;
+                i {
+                  margin-right: 10px;
+                  color: #000;
+                }
+              }
+              }  
+            }    
   /**************************/
   /* MEDIA QUERY */
   /**************************/
   
-  @media (max-width: 800px) {
+  @media (max-width: 767px) {
     header {
-    a:link,
-    a:visited {
-      color: #fff;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: all 0.3s;
-    }
-    
-    /* HELPER CLASSES */
-    .center {
+            background-color: #be3144;
+            height: 70px;
+            .center {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -131,8 +119,9 @@
     
     /* NAV MENU ITEMS */
     nav ul {
-      height: 100vh;
+      height: 50vh;
       list-style: none;
+      flex-direction: column
     }
     
     nav ul li {
