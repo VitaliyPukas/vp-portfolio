@@ -23,7 +23,6 @@ header {
 }
 header #navbar ul {
   display: flex;
-  width: 100%;
 }
 header #navbar ul li {
   list-style: none;
@@ -58,13 +57,11 @@ header #language a i {
   color: #000;
 }
 
-/**************************/
-/* MEDIA QUERY */
-/**************************/
+/* MEDIA QUERY HEADER */
 @media (max-width: 767px) {
   header {
     background-color: #be3144;
-    height: 70px;
+    height: 60px;
     /***********************/
     /* NAVIGATION MENU */
     /***********************/
@@ -91,7 +88,7 @@ header #language a i {
   header #language {
     position: fixed;
     z-index: 2;
-    top: 1.5rem;
+    top: 1rem;
     left: 1.5rem;
     font-size: 1.4rem;
     letter-spacing: 0.3rem;
@@ -120,9 +117,6 @@ header #language a i {
     height: 50vh;
     list-style: none;
     flex-direction: column;
-  }
-  header nav ul li {
-    height: 10%;
   }
   header nav li:nth-of-type(1) {
     background-color: #626059;
@@ -193,8 +187,8 @@ header nav li a:active {
     }
   }
   header .hamburger-menu {
-    position: fixed;
-    top: 1rem;
+    position: absolute;
+    top: 0;
     right: 2rem;
     z-index: 10;
     cursor: pointer;
@@ -203,14 +197,14 @@ header nav li a:active {
   header .menu-bar1,
 header .menu-bar2,
 header .menu-bar3 {
-    width: 3.5rem;
+    width: 2rem;
     height: 0.2rem;
     background-color: #fff;
-    margin: 0.8rem 0;
+    margin: 0.6rem 0;
     transition: 0.4s;
   }
   header .menu-bar2 {
-    width: 2rem;
+    width: 1.5rem;
     margin-left: auto;
   }
   header .active .menu-bar1 {
@@ -230,7 +224,22 @@ header .menu-bar3 {
     display: block;
   }
 }
-/* end header */
+@media (max-width: 479px) {
+  header {
+    height: 50px;
+  }
+
+  header .hamburger-menu {
+    top: 0rem;
+    right: 1rem;
+    display: block;
+  }
+
+  header #language {
+    top: 0.6rem;
+    left: 1rem;
+  }
+}
 /* home */
 #home {
   background-image: url(/img/gif3.gif);
@@ -248,6 +257,7 @@ header .menu-bar3 {
   font-size: 50px;
   font-weight: 500;
   color: #fff;
+  font-family: "Chakra Petch", sans-serif;
 }
 #home .home-title p {
   text-align: center;
@@ -258,20 +268,44 @@ header .menu-bar3 {
 #home ul {
   list-style: none;
   display: flex;
+  width: 100%;
 }
-#home ul a {
+#home ul li a {
   text-decoration: none;
   color: white;
   padding: 7px 15px;
   border: 2px solid white;
 }
-#home ul :hover {
+#home ul li :hover {
   background-color: #be3144;
 }
-#home ul i {
+#home ul li i {
   padding-right: 7px;
 }
 
+/* MEDIA QUERY HOME */
+@media (max-width: 767px) {
+  #home ul li a {
+    padding: 7px 10px;
+  }
+}
+@media (max-width: 560px) {
+  #home .home-title h1 {
+    font-size: 40px;
+  }
+
+  #home ul li a {
+    padding: 5px;
+  }
+
+  #home ul li i {
+    display: none;
+  }
+
+  #home .home-title p {
+    font-size: 25px;
+  }
+}
 /* about me */
 #about {
   border-top: 5px solid #be3144;
@@ -410,7 +444,12 @@ header .menu-bar3 {
   content: "75%";
 }
 
-/* end about me */
+/* MEDIA QUERY ABOUT */
+@media (max-width: 479px) {
+  #about h2 {
+    font-size: 30px;
+  }
+}
 /* project */
 #projects {
   border-top: 5px solid #be3144;
@@ -447,6 +486,11 @@ header .menu-bar3 {
 }
 #projects .nav ul .text-sunflower {
   color: #f1c40f;
+}
+#projects .block-cover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #projects .block-cover .box {
   border-radius: 4px;
@@ -491,7 +535,16 @@ header .menu-bar3 {
     border: 0;
   }
 }
-/* end project */
+/* MEDIA QUERY PROJECT */
+@media (max-width: 479px) {
+  #projects h2 {
+    font-size: 30px;
+  }
+
+  #projects .block-cover .box {
+    min-height: 100px;
+  }
+}
 /* contact */
 #contact {
   border-top: 5px solid #be3144;
@@ -505,7 +558,7 @@ header .menu-bar3 {
   color: #000;
 }
 #contact .form {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -545,7 +598,25 @@ header .menu-bar3 {
   background-color: #19ac56;
 }
 
-/* end contact */
+/* MEDIA QUERY CONTACT */
+@media (max-width: 991px) {
+  #contact h2 {
+    font-size: 30px;
+  }
+  #contact .form .form-body {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  #contact .form .form-body {
+    width: 70%;
+  }
+}
+@media (max-width: 479px) {
+  #contact .form .form-body {
+    width: 80%;
+  }
+}
 /* footer */
 footer {
   border-top: 5px solid #be3144;
@@ -559,86 +630,38 @@ footer ul {
   display: flex;
 }
 footer ul li {
-  margin-left: 20px;
+  margin-left: 0;
 }
 footer ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-/* end footer */
-/* media */
-@media (max-width: 979px) {
-  .project-block {
-    width: 45%;
-    margin-bottom: 30px;
-  }
-
-  #projects p {
-    display: block;
-    background-color: rgb(83, 82, 82);
-    font-size: 22px;
-    font-weight: 500;
-    padding: 10px 0;
-    position: relative;
-    top: -10px;
-  }
-
-  .contact-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 50px auto;
-    width: 70%;
-  }
-}
-@media (max-width: 768px) {
-  #navbar {
-    justify-content: center;
-    margin: 0;
-  }
-
-  .project-block {
-    width: 45%;
-    margin-bottom: 30px;
-  }
-
-  #projects p {
-    display: block;
-    background-color: rgb(83, 82, 82);
-    font-size: 1em;
-    font-weight: 500;
-    padding: 10px 0;
-    position: relative;
-    top: -10px;
-  }
-
-  .contact-list {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px auto;
-    width: 80%;
-  }
-}
+/* MEDIA QUERY FOOTER */
 @media (max-width: 479px) {
-  #navbar {
-    justify-content: center;
-    margin: 0;
+  footer {
+    border-top: 5px solid #be3144;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    padding: 30px 0;
   }
-
-  .project-block {
-    width: 80%;
-    margin-bottom: 30px;
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
   }
-
-  #projects p {
-    display: block;
-    background-color: rgb(83, 82, 82);
-    font-size: 0.8em;
-    font-weight: 500;
-    padding: 10px 0;
-    position: relative;
-    top: -10px;
+  footer ul li {
+    margin-left: 0;
+  }
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  footer ul li a span {
+    display: none;
   }
 }
 
