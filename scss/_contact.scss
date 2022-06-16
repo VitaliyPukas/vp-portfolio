@@ -1,0 +1,101 @@
+#contact {
+    border-top: 5px solid #be3144;
+    background-color: #ffffff;
+    padding: 0 0 50px;
+
+    h2 {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 35px;
+        color: #000;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+        .form-body {
+            width: 35%;
+            border: 4px solid rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: #000;
+
+            .form-input {
+                width: 100%;
+                border: 3px solid black;
+                min-height: 40px;
+                margin-bottom: 10px;
+
+                #formMassage {
+                    width: 100%;
+                    resize: vertical;
+                    min-height: 50px;
+                }
+            }
+
+            .form-btn {
+                background-color: #1dc965;
+                width: 100%;
+                padding: 7px;
+                color: rgb(255, 255, 255);
+                border: none;
+                border-radius: 10px;
+                font-size: 20px;
+                margin-top: 10px;
+            }
+
+            .form-btn:hover {
+                background-color: #19ac56;
+            }
+        }
+    }
+}
+
+/* MEDIA QUERY CONTACT */
+@media (max-width: 991px) {
+    #contact {
+        h2 {
+            font-size: 30px;
+        }
+
+        .form {
+            .form-body {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #contact .form .form-body {
+        width: 50%;
+        font-size: 17px;
+
+        .form-btn {
+            font-size: 18px;
+        }
+    }
+    #contact h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 479px) {
+    #contact .form .form-body {
+        width: 60%;
+        font-size: 16px;
+
+        .form-btn {
+            font-size: 16px;
+        }
+    }
+    #contact h2 {
+        font-size: 27px;
+    }
+}
