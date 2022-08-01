@@ -120,22 +120,45 @@
     width: 90%;
 }
 
-.bar .progress-line.css span {
-    width: 60%;
+.bar .progress-line.java span {
+    width: 65%;
 }
 
 .bar .progress-line.jquery span {
-    width: 85%;
+    width: 70%;
 }
 
-.bar .progress-line.python span {
-    width: 50%;
+.bar .progress-line.bootstrap span {
+    width: 70%;
 }
 
-.bar .progress-line.mysql span {
+.bar .progress-line.materialize span {
     width: 75%;
 }
 
+.bar .progress-line.scss span {
+    width: 80%;
+}
+
+.bar .progress-line.gulp span {
+    width: 60%;
+}
+
+.bar .progress-line.react span {
+    width: 40%;
+}
+
+.bar .progress-line.angular span {
+    width: 40%;
+}
+
+.bar .progress-line.git span {
+    width: 55%;
+}
+
+.bar .progress-line.english span {
+    width: 30%;
+}
 .progress-line span::before {
     position: absolute;
     content: "";
@@ -175,21 +198,46 @@
     content: "85%";
 }
 
-.progress-line.css span::after {
-    content: "70%";
+.progress-line.java span::after {
+    content: "65%";
 }
 
 .progress-line.jquery span::after {
-    content: "85%";
+    content: "70%";
 }
 
-.progress-line.python span::after {
-    content: "50%";
+.progress-line.bootstrap span::after {
+    content: "70%";
 }
 
-.progress-line.mysql span::after {
+.progress-line.materialize span::after {
     content: "75%";
 }
+
+.progress-line.scss span::after {
+    content: "80%";
+}
+
+.progress-line.gulp span::after {
+    content: "60%";
+}
+
+.progress-line.react span::after {
+    content: "40%";
+}
+
+.progress-line.angular span::after {
+    content: "40%";
+}
+
+.progress-line.git span::after {
+    content: "40%";
+}
+
+.progress-line.english span::after {
+    content: "35%";
+}
+
 
 /* MEDIA QUERY ABOUT */
 @media (max-width: 767px) {
