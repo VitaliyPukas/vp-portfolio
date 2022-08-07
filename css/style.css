@@ -669,9 +669,8 @@ header #language a i {
 
 #projects {
   border-top: 5px solid #be3144;
-  height: 500px;
   background-color: #000;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   width: 100%;
 }
 
@@ -696,20 +695,24 @@ header #language a i {
   color: #fff;
 }
 
-#projects .nav ul .text-alizarin {
+#projects .nav ul .text-react {
   color: #e74c3c;
 }
 
-#projects .nav ul .text-wisteria {
-  color: #8e44ad;
-}
-
-#projects .nav ul .text-emerland {
+#projects .nav ul .text-html-css {
   color: #2ecc71;
 }
 
-#projects .nav ul .text-sunflower {
+#projects .nav ul .text-materialize {
+  color: #2980b9;
+}
+
+#projects .nav ul .text-bootstrap {
   color: #f1c40f;
+}
+
+#projects .nav ul .text-mini {
+  color: #db0e9a;
 }
 
 #projects .block-cover {
@@ -727,7 +730,7 @@ header #language a i {
   border-radius: 4px;
   -webkit-box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
           box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
-  min-height: 140px;
+  min-height: 200px;
   min-width: calc(22% - 28px);
   padding: 0 10px;
   margin: 15px;
@@ -739,24 +742,24 @@ header #language a i {
   background-color: white;
 }
 
-#projects .block-cover .alizarin {
+#projects .block-cover .react {
   border: 3px solid #e74c3c;
 }
 
-#projects .block-cover .wisteria {
-  border: 3px solid #8e44ad;
-}
-
-#projects .block-cover .emerland {
+#projects .block-cover .html-css {
   border: 3px solid #2ecc71;
 }
 
-#projects .block-cover .belizehole {
+#projects .block-cover .materialize {
   border: 3px solid #2980b9;
 }
 
-#projects .block-cover .sunflower {
+#projects .block-cover .bootstrap {
   border: 3px solid #f1c40f;
+}
+
+#projects .block-cover .mini {
+  border: 3px solid #db0e9a;
 }
 
 .hide {

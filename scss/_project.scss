@@ -1,8 +1,7 @@
 #projects {
     border-top: 5px solid #be3144;
-    height: 500px;
     background-color: #000;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     width: 100%;
 
     h2 {
@@ -26,20 +25,24 @@
                 color: #fff;
             }
 
-            .text-alizarin {
+            .text-react{
                 color: #e74c3c;
             }
 
-            .text-wisteria {
-                color: #8e44ad;
-            }
-
-            .text-emerland {
+            .text-html-css {
                 color: #2ecc71;
             }
 
-            .text-sunflower {
+            .text-materialize {
+                color: #2980b9;
+            }
+
+            .text-bootstrap {
                 color: #f1c40f;
+            }
+
+            .text-mini {
+                color: #db0e9a;
             }
         }
     }
@@ -52,39 +55,38 @@
         .box {
             border-radius: 4px;
             box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
-            min-height: 140px;
+            min-height: 200px;
             min-width: calc(22% - 28px);
             padding: 0 10px;
             margin: 15px;
             border-width: 3px;
             float: left;
 
-            .portfolio-img {}
-
+        
             .portfolio-title {
                 background-color: white;
             }
         }
 
 
-        .alizarin {
+        .react{
             border: 3px solid #e74c3c;
         }
 
-        .wisteria {
-            border: 3px solid #8e44ad;
-        }
-
-        .emerland {
+        .html-css {
             border: 3px solid #2ecc71;
         }
 
-        .belizehole {
+        .materialize {
             border: 3px solid #2980b9;
         }
 
-        .sunflower {
+        .bootstrap {
             border: 3px solid #f1c40f;
+        }
+
+        .mini {
+            border: 3px solid #db0e9a;
         }
     }
 }
