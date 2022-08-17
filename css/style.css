@@ -279,7 +279,7 @@ header #language a i {
             transform: rotate(45deg) translate(-0.6rem, -0.8rem);
   }
   header .hamburger-menu {
-    top: 0px;
+    top: 0;
     right: 20px;
     display: block;
   }
@@ -488,7 +488,7 @@ header #language a i {
 }
 
 #about .skill-bars .bar:first-child {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 @-webkit-keyframes showText {
@@ -569,8 +569,8 @@ header #language a i {
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
+  border-bottom-width: 0;
+  border-right-width: 0;
   border-top-color: #fff;
   opacity: 0;
   -webkit-animation: showText2 0.5s 1.5s linear forwards;
@@ -667,143 +667,270 @@ header #language a i {
   }
 }
 
-#projects {
+#portfolio {
   border-top: 5px solid #be3144;
   background-color: #000;
   padding-bottom: 20px;
   width: 100%;
 }
 
-#projects h2 {
+#portfolio h2 {
   text-align: center;
   padding: 20px 0;
   font-size: 35px;
   color: #f0f0f0;
 }
 
-#projects .nav {
-  text-align: center;
-}
-
-#projects .nav ul li {
-  display: inline-block;
-  padding: 10px 10px 10px 0;
-  cursor: pointer;
-}
-
-#projects .nav ul .text-all {
-  color: #fff;
-}
-
-#projects .nav ul .text-react {
-  color: #e74c3c;
-}
-
-#projects .nav ul .text-html-css {
-  color: #2ecc71;
-}
-
-#projects .nav ul .text-materialize {
-  color: #2980b9;
-}
-
-#projects .nav ul .text-bootstrap {
-  color: #f1c40f;
-}
-
-#projects .nav ul .text-mini {
-  color: #db0e9a;
-}
-
-#projects .block-cover {
+#portfolio .portfolio-cards {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-#projects .block-cover .box {
-  border-radius: 4px;
-  -webkit-box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
-          box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
-  min-height: 200px;
-  min-width: calc(22% - 28px);
-  padding: 0 10px;
-  margin: 15px;
-  border-width: 3px;
-  float: left;
+#portfolio .portfolio-cards .card {
+  width: 45%;
+  height: auto;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-#projects .block-cover .box .portfolio-title {
+#portfolio .portfolio-cards .card a {
+  text-decoration: none;
+}
+
+#portfolio .portfolio-cards .card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 2px solid white;
+  padding: 10px 0;
+}
+
+#portfolio .portfolio-cards .card ul li {
+  list-style: none;
+  font-size: 12px;
+  background-color: #432ead;
+  margin-left: 5px;
+  padding: 2px 5px;
+}
+
+#portfolio .portfolio-cards .card img {
+  width: auto;
+  max-width: 100%;
+}
+
+#portfolio .portfolio-cards .card h3 {
+  color: black;
   background-color: white;
+  width: 100%;
+  padding: 5px 0;
+  position: relative;
+  top: -5px;
 }
 
-#projects .block-cover .react {
-  border: 3px solid #e74c3c;
+/* Общие стили */
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
 }
 
-#projects .block-cover .html-css {
-  border: 3px solid #2ecc71;
+.clearfix:after {
+  clear: both;
 }
 
-#projects .block-cover .materialize {
-  border: 3px solid #2980b9;
+.hover-text-one {
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  text-align: center;
 }
 
-#projects .block-cover .bootstrap {
-  border: 3px solid #f1c40f;
+.hover-text-one figure {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  background: #000000;
+  text-align: center;
+  cursor: pointer;
 }
 
-#projects .block-cover .mini {
-  border: 3px solid #db0e9a;
+.hover-text-one figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  opacity: 0.9;
 }
 
-.hide {
+.hover-text-one figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+  pointer-events: none;
+}
+
+.hover-text-one figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hover-text-one figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* Эффект при наведении */
+figure.effect-text-three {
+  background: #000000;
+}
+
+figure.effect-text-three img {
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+figure.effect-text-three:hover img {
+  opacity: 0.2;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+figure.effect-text-three p {
+  padding: 1em 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+
+figure.effect-text-three ul {
+  padding: 1em 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+
+figure.effect-text-three:hover p {
   opacity: 1;
-  -webkit-animation-name: a1;
-          animation-name: a1;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
-@-webkit-keyframes a1 {
-  to {
-    opacity: 0;
-    min-height: 0;
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
+figure.effect-text-three:hover ul {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 998px) {
+  #portfolio h2 {
+    font-size: 27px;
   }
-}
-
-@keyframes a1 {
-  to {
-    opacity: 0;
-    min-height: 0;
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
+  #portfolio h3 {
+    font-size: 15px;
+  }
+  .hover-text-one figure p {
+    letter-spacing: 1px;
+    font-size: 55.5%;
+  }
+  .hover-text-one figure figcaption {
+    padding: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
 }
 
 /* MEDIA QUERY PROJECT */
 @media (max-width: 767px) {
-  #projects h2 {
-    font-size: 30px;
+  #portfolio h2 {
+    font-size: 25px;
+  }
+  #portfolio h3 {
+    font-size: 14px;
+  }
+  .hover-text-one figure figcaption {
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  .hover-text-one figure p {
+    letter-spacing: 0.5px;
+    font-size: 45.5%;
+  }
+  #portfolio .portfolio-cards .card ul li {
+    list-style: none;
+    font-size: 8px;
+    background-color: #432ead;
+    margin-left: 5px;
+    padding: 2px 5px;
   }
 }
 
-@media (max-width: 479px) {
-  #projects h2 {
-    font-size: 27px;
+@media (max-width: 550px) {
+  #portfolio h2 {
+    font-size: 24px;
+  }
+  #portfolio .portfolio-cards .card {
+    width: 80%;
+  }
+  #portfolio .portfolio-cards .card ul li {
+    list-style: none;
+    font-size: 11px;
+    background-color: #432ead;
+    margin-left: 5px;
+    padding: 2px 5px;
+  }
+  .hover-text-one figure p {
+    letter-spacing: 1px;
+    font-size: 55.5%;
+  }
+  .hover-text-one figure figcaption {
+    padding: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   #projects .block-cover .box {
     min-height: 100px;

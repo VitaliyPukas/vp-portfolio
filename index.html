@@ -2,314 +2,516 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <title>VP-Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>VP-Portfolio</title>
 </head>
 
 <body>
 
-  <header>
+    <header>
 
-    <div class="overlay overlay-slide-left" id="overlay">
-      <nav id="navbar">
-        <ul class="nav-menu">
-          <li id="nav-1" class="slide-out-1 center"><a href="#home" class="center">
-              <p class="en">Home</p>
-              <p class="ua">Головна</p>
-            </a></li>
-          <li id="nav-2" class="slide-out-2 center"><a href="#about" class="center">
-              <p class="en">About</p>
-              <p class="ua">Про мене</p>
-            </a></li>
-          <li id="nav-3" class="slide-out-3 center"><a href="#projects" class="center">
-              <p class="en">Project</p>
-              <p class="ua">Роботи</p>
-            </a></li>
-          <li id="nav-4" class="slide-out-4 center"><a href="#contact" class="center">
-              <p class="en">Contact</p>
-              <p class="ua">Контакти</p>
-            </a></li>
+        <div class="overlay overlay-slide-left" id="overlay">
+            <nav id="navbar">
+                <ul class="nav-menu">
+                    <li id="nav-1" class="slide-out-1 center"><a href="#home" class="center">
+                            <p class="en">Home</p>
+                            <p class="ua">Головна</p>
+                        </a></li>
+                    <li id="nav-2" class="slide-out-2 center"><a href="#about" class="center">
+                            <p class="en">About</p>
+                            <p class="ua">Про мене</p>
+                        </a></li>
+                    <li id="nav-3" class="slide-out-3 center"><a href="#portfolio" class="center">
+                            <p class="en">Project</p>
+                            <p class="ua">Роботи</p>
+                        </a></li>
+                    <li id="nav-4" class="slide-out-4 center"><a href="#contact" class="center">
+                            <p class="en">Contact</p>
+                            <p class="ua">Контакти</p>
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="menu-bar1"></div>
+            <div class="menu-bar2"></div>
+            <div class="menu-bar3"></div>
+        </div>
+
+
+        <div id="language">
+            <a href="#more">
+                <i class="fas fa-globe-americas"></i><span class="ua">EN</span><span class="en">UA</span>
+            </a>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home-title">
+            <h1 class="en">Hey I am Vitaliy</h1>
+            <h1 class="ua">Привіт я Віталій</h1>
+            <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+            <ul>
+                <li><a class="btn btn-default hvr-bounce-to-right" href="https://www.facebook.com/pukas.vitaliy"
+                        role="button" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                <li><a class="btn btn-default hvr-bounce-to-right"
+                        href="https://github.com/VitaliyPukas?tab=repositories" target="_blank" role="button">
+                        <i class="fa fa-github"></i> Github</a></li>
+                <li><a class="btn btn-default hvr-bounce-to-right"
+                        href="https://www.linkedin.com/in/vitaliy-pukas-005425237/" target="_blank" role="button">
+                        <i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                <li><a class="btn btn-default hvr-bounce-to-right"
+                        href="https://www.freecodecamp.org/ukrainian/fcc265d1a53-f192-40ef-b119-e0586e5c2f8b"
+                        target="_blank" role="button">
+                        <i class="fa fa-fire"></i> FreeCodeCamp</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="en">About me</h2>
+        <h2 class="ua">Про мене</h2>
+        <div class="photo"><img src="/img/vp02.png" alt=""></div>
+        <div class="about-info">
+            <ul>
+                <li class="en">Date of Birth: September 29, 1990</li>
+                <li class="ua">Дата народження: 29 вересня 1990</li>
+                <li class="en">City of residence: Lviv</li>
+                <li class="ua">Місто проживання: Львів</li>
+                <li class="en">Phone: 073 146-04-36</li>
+                <li class="ua">Телефон: 073 146-04-36</li>
+                <li class="en">Email: pukasvitaliy@gmail.com</li>
+                <li class="ua">Електронна скринька: pukasvitaliy@gmail.com</li>
+            </ul>
+            <div class="info-text">
+                <h3 class="ua">Освіта</h3>
+                <h3 class="en">Education</h3>
+                <h4 class="ua">- Національний університет "Львівська політехніка" - </h4>
+                <h4 class="en">- National University "Lviv Polytechnic" - </h4>
+                <h4 class="ua">- Системна інженерія, Львів -</h4>
+                <h4 class="en">- System engineering, Lviv-</h4>
+                <h4 class="ua">- Вища, з 2007 по 2014 (7 років) -</h4>
+                <h4 class="en">- Higher, from 2007 to 2014 (7 years)-</h4>
+
+                <p class="ua">Напрям підготовки «Системна інженерія» поєднує поглиблене вивчення фундаментальних
+                    дисциплін
+                    (математики, фізики, електротехніки, алгоритмічних мов і програмування).
+                    Цей напрям є актуальний для різних галузей науки і техніки, зокрема: системи автоматичного
+                    керування, системи передачі і оброблення даних; периферійні засоби інформаційних
+                    і автоматизованих систем управління та телекомунікації, інтегровані робототехнічні
+                    системи і гнучкі виробництва.
+                </p>
+                <p class="en">The direction of preparation "System Engineering" combines in -depth study of fundamental
+                    disciplines
+                    (mathematics, physicists, electrical engineering, algorithmic languages and programming).
+                    This direction is relevant to different fields of science and technology, in particular: automatic
+                    systems
+                    control, data transmission and processing systems;Peripheral means of information
+                    and automated control and telecommunications systems integrated robotic
+                    systems and flexible production.
+                </p>
+
+                <h4>Front-end Developer</h4>
+                <p class="ua">проектування та розробка інтерфейсів для web - додатків та сайтів (2021, 12 місяців)</p>
+                <p class="en">проектування та розробка інтерфейсів для web - додатків та сайтів (2021, 12 місяців)</p>
+
+            </div>
+        </div>
+        <h2 class="en">My skils</h2>
+        <h2 class="ua">Мої скіли</h2>
+        <div class="skill-bars">
+            <div class="bar">
+                <div class="info">
+                    <span>HTML/CSS</span>
+                </div>
+                <div class="progress-line html">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>JavaScript</span>
+                </div>
+                <div class="progress-line java">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>jQuery</span>
+                </div>
+                <div class="progress-line jquery">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>Bootstrap</span>
+                </div>
+                <div class="progress-line bootstrap">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>Materialize</span>
+                </div>
+                <div class="progress-line materialize">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>SCSS</span>
+                </div>
+                <div class="progress-line scss">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>Gulp</span>
+                </div>
+                <div class="progress-line gulp">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>React</span>
+                </div>
+                <div class="progress-line react">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>Git/GitHub</span>
+                </div>
+                <div class="progress-line git">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>English</span>
+                </div>
+                <div class="progress-line english">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="project-tile ua">Це деякі мої проекти</h2>
+        <h2 class="project-tile en">These are some of my projects</h2>
+        <div class="portfolio-cards">
+            <!-- materialize-vk -->
+            <div class="card">
+                <a href="https://vitaliypukas.github.io/material-vk/" target="_blank">
+                    <div class="hover-text-one">
+                        <figure class="effect-text-three"><img src="/img/materialize-vk.png">
+                            <figcaption>
+                                <p class="ua">Даний проект створювався за допомогою Materialize. Це такий собі аналог
+                                    соціальної
+                                    мережі:)</p>
+                                <p class="en">This project was created using Materialize.It is a kind of analogue of a
+                                    social network:)
+                                </p>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Materialize</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <h3 class="ua">Соціальна мережа</h3>
+                        <h3 class="en">Social network</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- OLX -->
+            <div class="card">
+                <a href="https://vitaliypukas.github.io/OLX/" target="_blank">
+                    <div class="hover-text-one">
+                        <figure class="effect-text-three">
+                            <img src="/img/olx.png">
+                            <figcaption>
+                                <p class="ua">Даний проект створювався за допомогою bootstrap. Це такий собі аналог
+                                    дошки
+                                    оголошень:)
+                                </p>
+                                <p class="en">This project was created using Bootstrap.This is a kind of analogue of the
+                                    bulletin board
+                                    :) </p>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <h3 class="ua">Дошка оголошень</h3>
+                        <h3 class="en">Board</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- cards gallary -->
+            <div class="card">
+                <a href="https://vitaliypukas.github.io/cards-gallary/" target="_blank">
+                    <div class="hover-text-one">
+                        <figure class="effect-text-three">
+                            <img src="/img/cards-gallary.png">
+                            <figcaption>
+                                <p class="ua">
+                                    Галерея з прокручованням карточок по кліку.
+                                </p>
+                                <p class="en">
+                                    Gallery with scrolling card on the click.
+                                </p>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Js</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <h3 class="ua">Галерея</h3>
+                        <h3 class="en">Gallery</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- slider -->
+            <div class="card">
+                <a href="https://vitaliypukas.github.io/sliderVP/" target="_blank">
+                    <div class="hover-text-one">
+                        <figure class="effect-text-three">
+                            <img src="/img/sliderVP.png">
+                            <figcaption>
+                                <p class="ua">
+                                    Цікавий слайдер з вертикальним прокручуванням
+                                </p>
+                                <p class="en">
+                                    Interesting slider with vertical scrolling
+                                </p>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Js</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <h3 class="ua">Вертикальний слайдер</h3>
+                        <h3 class="en">Vertical slider</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- Gmail -->
+            <div class="card">
+                <a href="https://vitaliypukas.github.io/myGmail/" target="_blank">
+                    <div class="hover-text-one">
+                        <figure class="effect-text-three">
+                            <img src="/img/gmail.png">
+                            <figcaption>
+                                <p class="ua">Верстка сторінки з поштової скриньки.
+                                </p>
+                                <p class="en">Page layout from the mailbox.</p>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <h3 class="ua">Поштова скринька</h3>
+                        <h3 class="en">Gmail</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- film -->
+            <!-- <div class="card">
+                <a href="https://vitaliypukas.github.io/film/" target="_blank">
+                    <div class="hover-text-one">
+                        <figure class="effect-text-three">
+                            <img src="/img/film.png">
+                            <figcaption>
+                                <p class="ua">Даний проект створювався за допомогою bootstrap. Це такий собі аналог
+                                    дошки
+                                    оголошень:)
+                                </p>
+                                <p class="en">This project was created using Bootstrap.This is a kind of analogue of the
+                                    bulletin board
+                                    :) </p>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <h3 class="ua">Сайт з фільмами</h3>
+                        <h3 class="en">Film site</h3>
+                    </div>
+                </a>
+            </div> -->
+            <!-- tic-tac-toe -->
+            <div class="card">
+                <a href="https://vitaliypukas.github.io/tic-tac-toe/" target="_blank">
+                    <div class="hover-text-one">
+                        <figure class="effect-text-three">
+                            <img src="/img/tic.png">
+                            <figcaption>
+                                <p class="ua">Ігра хрестики нолики
+                                </p>
+                                <p class="en">Game tic-tac-toe</p>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Js</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <h3 class="ua">Хрестики нолики</h3>
+                        <h3 class="en">Tic-Tac-Toe</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- ua-travel -->
+            <div class="card">
+                <a href="https://vitaliypukas.github.io/travel/" target="_blank">
+                    <div class="hover-text-one">
+                        <figure class="effect-text-three">
+                            <img src="/img/travel.png">
+                            <figcaption>
+                                <p class="ua">Даний сайт створювався за допомогою Bootstrap.
+                                    Складається сайт з трьох сторінок:
+                                    <br>
+                                    1. Головна сторінка
+                                    <br>
+                                    2. Сторінка з прогнозом погоди.
+                                    <br>
+                                    3. Тут можна прокласти маршрут до обраного місця.
+                                </p>
+                                <p class="en">This project was created using Bootstrap.This is a kind of analogue of the
+                                    bulletin board
+                                    :) </p>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Js</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <h3 class="ua">Сайт для подорожей</h3>
+                        <h3 class="en">Traveling site</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- youTube -->
+            <div class="card">
+                <a href="https://vitaliypukas.github.io/youTube/" target="_blank">
+                    <div class="hover-text-one">
+                        <figure class="effect-text-three">
+                            <img src="/img/youTube.png">
+                            <figcaption>
+                                <p class="ua">Верстка сторінки YouTube.
+                                </p>
+                                <p class="en">YouTube page layout.</p>
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <h3 class="ua">YouTube</h3>
+                        <h3 class="en">YouTube</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="contact-header">
+            <h2 class="ua">Давай працювати разом...</h2>
+            <h2 class="en">Let's work together...</h2>
+        </div>
+
+        <div class="form">
+            <form action="#" id="form" class="form-body">
+
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Site Name">
+                <input type="hidden" name="admin_email" value="pukasvitaliy@gmail.com">
+                <input type="hidden" name="form_subject" value="Form Subject">
+                <!-- END Hidden Required Fields -->
+
+                <div class="form-border">
+                    <div class="form-item">
+                        <label for="formName" class="form-label">
+                            <p class="en">Name*</p>
+                            <p class="ua">Ім'я *</p>
+                        </label>
+                        <input name="Name" id="formName" type="text" class="form-input _req ">
+                    </div>
+                    <div class="form-item">
+                        <label for="formEmail" class="form-label">
+                            <p class="en">Email*</p>
+                            <p class="ua">Пошта *</p>
+                        </label>
+                        <input name="Email" id="formEmail" type="text" class="form-input _req _email">
+                    </div>
+                    <div class="form-item">
+                        <label for="formMassage" class="form-label">
+                            <p class="en">Massage</p>
+                            <p class="ua">Повідомлення</p>
+                        </label>
+                        <textarea name="Massage" id="formMassage" class="form-input" rows="8"></textarea>
+                    </div>
+                    <button class="form-btn" type="submit">
+                        <p class="en">Send</p>
+                        <p class="ua">Відправити</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a class="btn btn-default hvr-bounce-to-right" href="https://www.facebook.com/pukas.vitaliy"
+                    role="button" target="_blank"><i class="fa fa-facebook"></i><span>Facebook </span> </a></li>
+            <li><a class="btn btn-default hvr-bounce-to-right" href="https://github.com/VitaliyPukas?tab=repositories"
+                    target="_blank" role="button">
+                    <i class="fa fa-github"></i><span>Github</span></a></li>
+            <li><a class="btn btn-default hvr-bounce-to-right"
+                    href="https://www.linkedin.com/in/vitaliy-pukas-005425237/" target="_blank" role="button">
+                    <i class="fa fa-linkedin"></i><span>LinkedIn</span> </a></li>
+            <li><a class="btn btn-default hvr-bounce-to-right"
+                    href="https://www.freecodecamp.org/ukrainian/fcc265d1a53-f192-40ef-b119-e0586e5c2f8b"
+                    target="_blank" role="button">
+                    <i class="fa fa-fire"></i><span>FreeCodeCamp</span> </a></li>
         </ul>
-      </nav>
-    </div>
+    </footer>
 
-
-    <div class="hamburger-menu" id="hamburger-menu">
-      <div class="menu-bar1"></div>
-      <div class="menu-bar2"></div>
-      <div class="menu-bar3"></div>
-    </div>
-
-
-
-    <div id="language">
-      <a href="#more">
-        <i class="fas fa-globe-americas"></i><span class="ua">EN</span><span class="en">UA</span>
-      </a>
-    </div>
-  </header>
-
-  <section id="home">
-    <div class="home-title">
-      <h1 class="en">Hey I am Vitaliy</h1>
-      <h1 class="ua">Привіт я Віталій</h1>
-      <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
-      <ul>
-        <li> <a class="btn btn-default hvr-bounce-to-right" href="https://www.facebook.com/pukas.vitaliy" role="button"
-            target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
-        <li><a class="btn btn-default hvr-bounce-to-right" href="https://github.com/VitaliyPukas?tab=repositories"
-            target="_blank" role="button">
-            <i class="fa fa-github"></i> Github</a></li>
-        <li> <a class="btn btn-default hvr-bounce-to-right" href="https://www.linkedin.com/in/vitaliy-p-005425237/"
-            target="_blank" role="button">
-            <i class="fa fa-linkedin"></i> LinkedIn</a></li>
-        <li><a class="btn btn-default hvr-bounce-to-right"
-            href="https://www.freecodecamp.org/ukrainian/fcc265d1a53-f192-40ef-b119-e0586e5c2f8b" target="_blank"
-            role="button">
-            <i class="fa fa-fire"></i> FreeCodeCamp</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2 class="en">About me</h2>
-    <h2 class="ua">Про мене</h2>
-    <div class="photo"><img src="/img/vp02.png" alt=""></div>
-    <div class="about-info">
-      <ul>
-        <li class="en">Date of Birth: September 29, 1990</li>
-        <li class="ua">Дата народження: 29 вересня 1990</li> 
-        <li class="en">City of residence: Lviv </li>
-        <li class="ua">Місто проживання: Львів </li>
-        <li class="en">Phone: 073 146-04-36 </li>
-        <li class="ua">Телефон: 073 146-04-36 </li>
-        <li class="en">Email: pukasvitaliy@gmail.com</li>
-        <li class="ua">Електронна скринька: pukasvitaliy@gmail.com</li>
-      </ul>
-      <div class="info-text">
-        <h3 class="ua">Освіта</h3>
-        <h3 class="en">Education</h3>
-        <h4 class="ua">- Національний університет "Львівська політехніка" - </h4>
-        <h4 class="en">- National University "Lviv Polytechnic" - </h4>
-        <h4 class="ua">- Системна інженерія, Львів -</h4>
-        <h4 class="en">- System engineering, Lviv-</h4>
-        <h4 class="ua">- Вища, з 2007 по 2014 (7 років) -</h4>
-        <h4 class="en">- Higher, from 2007 to 2014 (7 years)-</h4>
-
-        <p class="ua">Напрям підготовки «Системна інженерія» поєднує поглиблене вивчення фундаментальних дисциплін
-          (математики, фізики, електротехніки, алгоритмічних мов і програмування).
-          Цей напрям є актуальний для різних галузей науки і техніки, зокрема: системи автоматичного
-          керування, системи передачі і оброблення даних; периферійні засоби інформаційних
-          і автоматизованих систем управління та телекомунікації, інтегровані робототехнічні
-          системи і гнучкі виробництва.
-        </p>
-        <p class="en">The direction of preparation "System Engineering" combines in -depth study of fundamental disciplines
-          (mathematics, physicists, electrical engineering, algorithmic languages and programming).
-          This direction is relevant to different fields of science and technology, in particular: automatic systems
-          control, data transmission and processing systems;Peripheral means of information
-          and automated control and telecommunications systems integrated robotic
-          systems and flexible production.
-        </p>
-
-        <h4>Front-end Developer</h4>
-        <p class="ua">проектування та розробка інтерфейсів для web - додатків та сайтів (2021, 12 місяців)</p>
-        <p class="en">проектування та розробка інтерфейсів для web - додатків та сайтів (2021, 12 місяців)</p>
-
-      </div>
-    </div>
-    <h2 class="en">My skils</h2>
-    <h2 class="ua">Мої скіли</h2>
-    <div class="skill-bars">
-      <div class="bar">
-        <div class="info">
-          <span>HTML/CSS</span>
-        </div>
-        <div class="progress-line html">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <div class="info">
-          <span>JavaScript</span>
-        </div>
-        <div class="progress-line java">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <div class="info">
-          <span>jQuery</span>
-        </div>
-        <div class="progress-line jquery">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <div class="info">
-          <span>Bootstrap</span>
-        </div>
-        <div class="progress-line bootstrap">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <div class="info">
-          <span>Materialize</span>
-        </div>
-        <div class="progress-line materialize">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <div class="info">
-          <span>SCSS</span>
-        </div>
-        <div class="progress-line scss">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <div class="info">
-          <span>Gulp</span>
-        </div>
-        <div class="progress-line gulp">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <div class="info">
-          <span>React</span>
-        </div>
-        <div class="progress-line react">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <div class="info">
-          <span>Angular</span>
-        </div>
-        <div class="progress-line angular">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <div class="info">
-          <span>Git/GitHub</span>
-        </div>
-        <div class="progress-line git">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <div class="info">
-          <span>English</span>
-        </div>
-        <div class="progress-line english">
-          <span></span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2 class="project-tile ua">Це деякі мої проекти</h2>
-    <h2 class="project-tile en">These are some of my projects</h2>
-    <nav class="nav">
-      <ul>
-        <li data-f="all" class="text-all">ALL</li>
-        <li data-f="react" class="text-react">React</li>
-        <li data-f="html-css" class="text-html-css">Html/Css</li>
-        <li data-f="materialize" class="text-materialize">Materialize</li>
-        <li data-f="bootstrap" class="text-bootstrap">Bootstrap</li>
-        <li data-f="mini" class="text-mini">Mini</li>
-      </ul>
-    </nav>
-    <div class="block-cover">
-      <div class="col-auto box react"></div>
-      <div class="col-auto box html-css"></div>
-      <div class="col-auto box materialize"></div>
-      <div class="col-auto box bootstrap"></div>
-      <div class="col-auto box mini"></div>   
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="contact-header">
-      <h2 class="ua">Давай працювати разом...</h2>
-      <h2 class="en">Let's work together...</h2>
-    </div>
-
-    <div class="form">
-      <form action="#" id="form" class="form-body">
-
-
-        <!-- Hidden Required Fields -->
-        <input type="hidden" name="project_name" value="Site Name">
-        <input type="hidden" name="admin_email" value="pukasvitaliy@gmail.com">
-        <input type="hidden" name="form_subject" value="Form Subject">
-        <!-- END Hidden Required Fields -->
-
-        <div class="form-border">
-          <div class="form-item">
-            <label for="formName" class="form-label">
-              <p class="en">Name*</p>
-              <p class="ua">Ім'я *</p>
-            </label>
-            <input name="Name" id="formName" type="text" class="form-input _req ">
-          </div>
-          <div class="form-item">
-            <label for="formEmail" class="form-label">
-              <p class="en">Email*</p>
-              <p class="ua">Пошта *</p>
-            </label>
-            <input name="Email" id="formEmail" type="text" class="form-input _req _email">
-          </div>
-          <div class="form-item">
-            <label for="formMassage" class="form-label">
-              <p class="en">Massage</p>
-              <p class="ua">Повідомлення</p>
-            </label>
-            <textarea name="Massage" id="formMassage" class="form-input" rows="8"></textarea>
-          </div>
-          <button class="form-btn" type="submit">
-            <p class="en">Send</p>
-            <p class="ua">Відправити</p>
-          </button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <ul>
-      <li> <a class="btn btn-default hvr-bounce-to-right" href="https://www.facebook.com/pukas.vitaliy" role="button"
-          target="_blank"><i class="fa fa-facebook"></i><span>Facebook </span> </a></li>
-      <li><a class="btn btn-default hvr-bounce-to-right" href="https://github.com/VitaliyPukas?tab=repositories"
-          target="_blank" role="button">
-          <i class="fa fa-github"></i><span>Github</span></a></li>
-      <li> <a class="btn btn-default hvr-bounce-to-right" href="https://www.linkedin.com/in/vitaliy-p-005425237/"
-          target="_blank" role="button">
-          <i class="fa fa-linkedin"></i><span>LinkedIn</span> </a></li>
-      <li><a class="btn btn-default hvr-bounce-to-right"
-          href="https://www.freecodecamp.org/ukrainian/fcc265d1a53-f192-40ef-b119-e0586e5c2f8b" target="_blank"
-          role="button">
-          <i class="fa fa-fire"></i><span>FreeCodeCamp</span> </a></li>
-    </ul>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://use.fontawesome.com/1c7fddf764.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/filter.js"></script>
-  <script src="js/form.js"></script>
-  <script src="js/leng.js"></script>
-  <script src="js/hamburger.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/1c7fddf764.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/leng.js"></script>
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>

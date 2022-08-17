@@ -99,7 +99,7 @@
         }
 
         .bar:first-child {
-            margin-top: 0px;
+            margin-top: 0;
         }
     }
 }
@@ -167,8 +167,8 @@
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
+    border-bottom-width: 0;
+    border-right-width: 0;
     border-top-color: #fff;
     opacity: 0;
     animation: showText2 0.5s 1.5s linear forwards;
